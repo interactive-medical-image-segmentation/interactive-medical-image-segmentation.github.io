@@ -276,18 +276,13 @@
                         <h2 class="title is-3">Model</h2>
                         <div class="content has-text-justified">
                           <p>
-                            <b>MiniGPT-4 consists of a vision encoder with a pretrained ViT and Q-Former, a single
-                              linear projection
-                              layer, and an advanced Vicuna large language model. MiniGPT-4 only requires training the
-                              linear layer
-                              to
-                              align the visual features with the Vicuna.</b>:
+                            <b>The segmentation module outputs actions to change the segmentation probability of each voxel (agent) at each interaction step. Meanwhile, the confidence network estimating the confidence of the actions will generate the self-adaptive reward and simulated label. The confidence map can provide the advice regions of the next interaction step to experts. 
+                            </b>
                           </p>
-                          <img src="images/fig-revised_interaction.png">
+                          <img src="images/fig-revised_framework.png">
                           <h3 class="subtitle has-text-centered">
                             <div align="center">
-                              <p style="font-family:Times New Roman"><b>The architecture of Interactive Medical Image
-                                  Segmentation</b></p>
+                              <p style="font-family:Times New Roman"><b>Interactive medical image segmentation with self-adaptive confidence calibration</b></p>
                             </div>
                           </h3>
                         </div>
@@ -303,27 +298,16 @@
                 <section class="section" id="BibTeX">
                   <div class="container is-max-desktop content">
                     <h2 class="title">BibTeX</h2>
-                    <pre><code>@article{zhu2023minigpt,
-  title={MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models},
-  author={Zhu, Deyao and Chen, Jun and Shen, Xiaoqian and Li, Xiang and Elhoseiny, Mohamed},
-  journal={arXiv preprint arXiv:2304.10592},
-  year={2023}
+                    <pre><code>@article{shen2023interactive,
+  title={Interactive medical image segmentation with self-adaptive confidence calibration},
+  author={Shen, Chuyun and Li, Wenhao and Xu, Qisen and Hu, Bin and Jin, Bo and Cai, Haibin and Zhu, Fengping and Li, Yuxin and Wang, Xiangfeng},
+  journal={Frontiers of Information Technology \& Electronic Engineering},
+  volume={24},
+  number={9},
+  pages={1332--1348},
+  year={2023},
+  publisher={Springer}
 }</code></pre>
-                  </div>
-                </section>
-
-
-
-                <section class="section" id="Acknowledgement">
-                  <div class="container is-max-desktop content">
-                    <h2 class="title">Acknowledgement</h2>
-                    <p>
-                      This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>,
-                      licensed
-                      under
-                      a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-                        Commons Attribution-ShareAlike 4.0 International License</a>.
-                    </p>
                   </div>
                 </section>
 
@@ -334,14 +318,39 @@
                       <h2 class="title is-3">Results</h2>
                     </div>
                   </div>
-
-                  <!--/ Results. -->
                   <div class="container is-max-desktop">
                 </section>
 
-                <section class="section">
-                  <div id="main">
+                <!-- Paper Model. -->
 
+                <div class="columns is-centered has-text-centered">
+                  <div class="column is-six-fifths">
+                    <div class="content has-text-justified">
+                      <img src="images/mecca_tab1.png">
+                      <h3 class="subtitle has-text-centered">
+                        <div align="center">
+                          <p style="font-family:Times New Roman"><b>Table 1: Quantitative comparison of different methods</b></p>
+                        </div>
+                      </h3>
+                    </div>
+
+                    <br>
+
+                    <div class="content has-text-justified">
+                      <img src="images/mecca_dice.png">
+                      <h3 class="subtitle has-text-centered">
+                        <div align="center">
+                          <p style="font-family:Times New Roman"><b>The performance of different interactive medical segmentation methods and methods with different weighting rewards.
+                          </b></p>
+                        </div>
+                      </h3>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- <section class="section">
+                  <div id="main">
                     <div class="box">
                       <div class="pic"><img src="demos/fact_1.png" alt=""></div>
                     </div>
@@ -359,7 +368,7 @@
                     </div>
                   </div>
 
-                </section>
+                </section> -->
               </div>
               <div id="tab2" class="tab-pane" role="tabpanel">
 
