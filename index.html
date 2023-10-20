@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <!-- <link rel="icon" href="./static/images/icon.png"> -->
   <link rel="stylesheet" href="./static/css/index.css">
-
+  <link rel="stylesheet" href="./static/css/nav.css">
   <link rel="shortcut icon" href="path/to/favicon.ico" type="image/x-icon">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -72,53 +72,302 @@
 
 
 <body>
-
   <section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
+      <div class="wrapper container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Interactive Medical Image Segmentation:</h1>
-            <div class="columns is-centered has-text-centered">
-              <div class="column is-six-fifths">
-                <div class="content has-text-justified">
-                  <p>Interactive Medical Image Segmentation is a crucial field in medical imaging and computer-aided
-                    diagnosis, as it plays a vital role in improving patient care, treatment planning, and clinical
-                    decision-making. The importance of this field can be summarized in the following points:</p>
-                  <ol>
-                    <li><strong>Enhanced Diagnostic Accuracy:</strong> Interactive segmentation techniques allow for
-                      more accurate delineation of anatomical structures and pathological regions within medical images.
-                      This improved precision enables clinicians to make more informed diagnoses and treatment
-                      decisions.</li>
-                    <li><strong>Time and Cost Efficiency:</strong> Automating the segmentation process with interactive
-                      tools can significantly reduce the time and effort required for manual image analysis. This
-                      efficiency translates into cost savings and faster diagnosis for patients.</li>
-                    <li><strong>Personalized Medicine:</strong> Interactive segmentation can facilitate the development
-                      of personalized treatment plans by providing detailed information about individual patients'
-                      anatomy and pathology. This tailored approach can lead to better patient outcomes and improved
-                      healthcare quality.</li>
-                    <li><strong>Multidisciplinary Collaboration:</strong> The field of interactive medical image
-                      segmentation brings together experts from various disciplines, including radiology, computer
-                      science, and engineering. This interdisciplinary collaboration fosters innovation and drives
-                      advancements in medical imaging technology.</li>
-                    <li><strong>Improved Education and Training:</strong> Interactive segmentation tools can be used for
-                      educational purposes, helping medical students and professionals better understand complex
-                      anatomical structures and pathological conditions. This enhanced knowledge can lead to improved
-                      patient care and clinical outcomes.</li>
-                    <li><strong>Research and Development:</strong> The advancements in interactive medical image
-                      segmentation contribute to the broader field of medical research. Accurate segmentation is
-                      essential for understanding the progression of diseases, evaluating treatment efficacy, and
-                      developing new therapeutic interventions.</li>
-                  </ol>
-                  <p>In summary, Interactive Medical Image Segmentation is a vital field in modern healthcare, as it
-                    enhances diagnostic accuracy, promotes efficiency, facilitates personalized medicine, fosters
-                    interdisciplinary collaboration, improves education and training, and contributes to medical
-                    research and development.
-                  </p>
+            <h1 class="title is-1 publication-title">Interactive Medical Image Segmentation</h1>
+
+            <div class="content has-text-justified">
+              <p>
+                <!-- blue font -->
+                <span style="color:#008AD7;font-weight:bold">GPT-4 says: </span>
+                Interactive Medical Image Segmentation is a key aspect of modern healthcare, significantly enhancing diagnostic accuracy and patient care. By providing precise images of anatomical structures and pathological regions, it enables clinicians to make informed decisions about treatment plans. This field also promotes time and cost efficiency through the use of automated tools, facilitating personalized medicine and interdisciplinary collaboration. Ultimately, Interactive Medical Image Segmentation contributes to improved patient outcomes, healthcare quality, and medical research advancements.
+              </p>
+              <img src="images/fig-revised_interaction.png">
+              <h3 class="subtitle has-text-centered">
+                <div align="center">
+                  <p style="font-family:Times New Roman"><b>The architecture of Interactive Medical Image
+                      Segmentation</b></p>
                 </div>
+              </h3>
+            </div>
+            <!-- tab -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" style="margin-left: 2px;">
+                <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab" aria-controls="human"
+                  style="background-color:azure;">With Self-adaptive Confidence Calibration</a>
+              </li>
+              <li class="nav-item" style="margin-left: 10px;">
+                <a class="nav-link" data-toggle="tab" href="#tab2" role="tab" aria-controls="gpt4"
+                  style="background-color:azure;">GPT-4 Evaluation</a>
+              </li>
+              <li class="nav-item" style="margin-left: 10px;">
+                <a class="nav-link" data-toggle="tab" href="#tab3" role="tab" aria-controls="unnatural"
+                  style="background-color:azure;">Unnatural Instruction Evaluation</a>
+              </li>
+            </ul>
+            <!-- tab contents -->
+            <div class="tab-content">
+              <div id="tab1" class="tab-pane active" role="tabpanel">
+                <section class="before">
+                  <div class="before-body">
+                    <div class="container is-max-desktop">
+                      <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                          <h3 class="title is-2 publication-title">Interactive medical image segmentation with
+                            self-adaptive
+                            confidence calibration</h3>
+                          <div class="is-size-5">
+                            <span class="author-block">
+                              <a href="https://scholar.google.com.hk/citations?user=sB4jZ54AAAAJ"
+                                style="color:#008AD7;font-weight:normal;">Chuyun
+                                Shen</a>,
+                            </span>
+                            <span class="author-block">
+                              <a href="https://orcid.org/0000-0003-2985-1098"
+                                style="color:#F2A900;font-weight:normal;">Wenhao
+                                Li</a>,
+                            </span>
+                            <span class="author-block">
+                              <a href="#" style="color:#008AD7;font-weight:normal;">Qisen Xu</a>,
+                            </span>
+                            <span class="author-block">
+                              <a href="#" style="color:#3e8a2ce3;font-weight:normal;">Bin Hu</a>,
+                            </span>
+                            <span class="author-block">
+                              <a href="#" style="color:#b52390;font-weight:normal;">Bo Jin</a>,
+                            </span>
+                            <span class="author-block">
+                              <a href="#" style="color:#008AD7;font-weight:normal;">Haibin Cai</a>,
+                            </span>
+                            <span class="author-block">
+                              <a href="#" style="color:#3e8a2ce3;font-weight:normal;">Fengping Zhu</a>,
+                            </span>
+                            <span class="author-block">
+                              <a href="#" style="color:#3e8a2ce3;font-weight:normal;">Yuxin Li</a>,
+                            </span>
+                            <span class="author-block">
+                              <a href="#" style="color:#008AD7;font-weight:normal;">Xiangfeng Wang</a>
+                            </span>
+
+                          </div>
+
+
+                          <div class="is-size-5 publication-authors">
+                            <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> East
+                              China Normal
+                              University </span>
+                            <span class="author-block"><b style="color:#F2A900; font-weight:normal">&#x25B6 </b> The
+                              Chinese
+                              University of Hong Kong, Shenzhen </span>
+                            <span class="author-block"><b style="color:#3e8a2ce3; font-weight:normal">&#x25B6
+                              </b>Huashan Hospital
+                            </span>
+                            <span class="author-block"><b style="color:#b52390; font-weight:normal">&#x25B6 </b>Tongji
+                              University
+                            </span>
+                          </div>
+
+                          <div class="is-size-5 publication-authors">
+                            <!-- <span class="author-block"><sup>*</sup>Equal Contribution </span> -->
+                            <!-- <span class="author-block"><sup>&#x2628;</sup>Equal Advisory Contribution, </span> -->
+                            <!-- <span class="author-block"><sup>&#x2691;</sup>Project Lead </span> -->
+                          </div>
+
+
+                          <!--  <div class="is-size-5 publication-authors">
+                          <span class="author-block"><b style="color:#e08ba0; font-weight:normal"> <b>In CVPR2023</b> </b></span>
+                        </div> -->
+
+
+                          <div class="column has-text-centered">
+                            <div class="publication-links">
+                              <span class="link-block">
+                                <a href="https://link.springer.com/article/10.1631/FITEE.2200299" target="_blank"
+                                  class="external-link button is-normal is-rounded is-dark">
+                                  <span class="icon">
+                                    <i class="ai ai-arxiv"></i>
+                                  </span>
+                                  <span>Paper</span>
+                                </a>
+                              </span>
+
+                              <span class="link-block">
+                                <a href="https://github.com/Vision-CAIR/MiniGPT-4" target="_blank"
+                                  class="external-link button is-normal is-rounded is-dark">
+                                  <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                  </span>
+                                  <span>Code</span>
+                                </a>
+                              </span>
+
+                              <span class="link-block">
+                                <a href="https://youtu.be/__tftoxpBAw" target="_blank"
+                                  class="external-link button is-normal is-rounded is-dark">
+                                  <span class="icon">
+                                    <i class="fab fa-youtube"></i>
+                                  </span>
+                                  <span>Video</span>
+                                </a>
+                              </span>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+
+                <link rel="stylesheet" type="text/css" href="js/simple_style.css" />
+
+
+                <section class="section">
+                  <div class="wrapper is-max-desktop">
+                    <!-- Abstract. -->
+                    <div class="columns is-centered has-text-centered">
+                      <div class="column is-four-fifths">
+                        <h2 class="title is-3">Abstract</h2>
+                        <div class="content has-text-justified">
+                          <p>Interactive medical segmentation based on human-in-the-loop machine learning is a novel
+                            paradigm that
+                            draws on human expert knowledge to assist medical image segmentation. However, existing
+                            methods often
+                            fall into what we call <em>interactive misunderstanding</em>, the essence of which is the
+                            dilemma in
+                            trading off <em>short-</em> and <em>long-term</em> interaction information. To better
+                            utilize the
+                            interactive information at various timescales, we propose an interactive segmentation
+                            framework, called
+                            interactive <strong>ME</strong>dical segmentation with self-adaptive
+                            <strong>C</strong>onfidence
+                            <strong>CA</strong>libration (<strong>MECCA</strong>), which combines action-based
+                            confidence learning
+                            and multi-agent reinforcement learning. A novel confidence network is learned by predicting
+                            the
+                            alignment level of the action with the short-term interactive information. A
+                            confidence-based
+                            reward-shaping mechanism is then proposed to explicitly incorporate confidence in the policy
+                            gradient
+                            calculation, thus directly correcting the model's interactive misunderstanding. MECCA also
+                            enables
+                            user-friendly interactions by reducing the interaction intensity and difficulty via label
+                            generation and
+                            interaction guidance, respectively. Numerical experiments on different segmentation tasks
+                            show that
+                            MECCA can significantly improve short- and long-term interactive information utilization
+                            efficiency with
+                            remarkably fewer labeled samples.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <!-- Paper Model. -->
+
+                    <div class="columns is-centered has-text-centered">
+                      <div class="column is-six-fifths">
+                        <h2 class="title is-3">Model</h2>
+                        <div class="content has-text-justified">
+                          <p>
+                            <b>MiniGPT-4 consists of a vision encoder with a pretrained ViT and Q-Former, a single
+                              linear projection
+                              layer, and an advanced Vicuna large language model. MiniGPT-4 only requires training the
+                              linear layer
+                              to
+                              align the visual features with the Vicuna.</b>:
+                          </p>
+                          <img src="images/fig-revised_interaction.png">
+                          <h3 class="subtitle has-text-centered">
+                            <div align="center">
+                              <p style="font-family:Times New Roman"><b>The architecture of Interactive Medical Image
+                                  Segmentation</b></p>
+                            </div>
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!--/ Paper video. -->
+                  </div>
+                </section>
+
+
+                <section class="section" id="BibTeX">
+                  <div class="container is-max-desktop content">
+                    <h2 class="title">BibTeX</h2>
+                    <pre><code>@article{zhu2023minigpt,
+  title={MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models},
+  author={Zhu, Deyao and Chen, Jun and Shen, Xiaoqian and Li, Xiang and Elhoseiny, Mohamed},
+  journal={arXiv preprint arXiv:2304.10592},
+  year={2023}
+}</code></pre>
+                  </div>
+                </section>
+
+
+
+                <section class="section" id="Acknowledgement">
+                  <div class="container is-max-desktop content">
+                    <h2 class="title">Acknowledgement</h2>
+                    <p>
+                      This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>,
+                      licensed
+                      under
+                      a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                  </div>
+                </section>
+
+                <section class="section">
+                  <!-- Results. -->
+                  <div class="columns is-centered has-text-centered">
+                    <div class="column is-six-fifths">
+                      <h2 class="title is-3">Results</h2>
+                    </div>
+                  </div>
+
+                  <!--/ Results. -->
+                  <div class="container is-max-desktop">
+                </section>
+
+                <section class="section">
+                  <div id="main">
+
+                    <div class="box">
+                      <div class="pic"><img src="demos/fact_1.png" alt=""></div>
+                    </div>
+                    <div class="box">
+                      <div class="pic"><img src="demos/fact_2.png" alt=""></div>
+                    </div>
+                    <div class="box">
+                      <div class="pic"><img src="demos/fix_2.png" alt=""></div>
+                    </div>
+                    <div class="box">
+                      <div class="pic"><img src="demos/fun_1.png" alt=""></div>
+                    </div>
+                    <div class="box">
+                      <div class="pic"><img src="demos/fun_2.png" alt=""></div>
+                    </div>
+                  </div>
+
+                </section>
+              </div>
+              <div id="tab2" class="tab-pane" role="tabpanel">
+
+              </div>
+              <div id="tab3" class="tab-pane" role="tabpanel">
+
               </div>
             </div>
-
 
           </div>
         </div>
@@ -126,954 +375,31 @@
     </div>
   </section>
 
-  <div class="article">
-    <section class="before">
-      <div class="before-body">
-        <div class="container is-max-desktop">
-          <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <h2 class="title is-2 publication-title">Interactive medical image segmentation with self-adaptive
-                confidence calibration</h2>
-              <div class="is-size-5">
-                <span class="author-block">
-                  <a href="https://scholar.google.com.hk/citations?user=sB4jZ54AAAAJ"
-                    style="color:#008AD7;font-weight:normal;">Chuyun
-                    Shen</a>,
-                </span>
-                <span class="author-block">
-                  <a href="https://orcid.org/0000-0003-2985-1098" style="color:#F2A900;font-weight:normal;">Wenhao
-                    Li</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#008AD7;font-weight:normal;">Qisen Xu</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#3e8a2ce3;font-weight:normal;">Bin Hu</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#b52390;font-weight:normal;">Bo Jin</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#008AD7;font-weight:normal;">Haibin Cai</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#3e8a2ce3;font-weight:normal;">Fengping Zhu</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#3e8a2ce3;font-weight:normal;">Yuxin Li</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#008AD7;font-weight:normal;">Xiangfeng Wang</a>
-                </span>
+  <script>
+    let currTab = 1;
+    document.addEventListener('click', e => {
+      if (e.target.getAttribute('data-toggle') === "tab") {
+        e.preventDefault();
+        let preLink = document.querySelector(`a[href='#tab${currTab}']`);
+        if (preLink == e.target) {
+          return;
+        }
+        let preActive = document.getElementById(`tab${currTab}`);
+        let id = e.target.getAttribute('href').slice(1);
+        let nextActive = document.getElementById(id);
+        preActive.classList.remove("active");
+        preLink.classList.remove("active");
+        nextActive.classList.add("active");
+        e.target.classList.add("active");
+        currTab = Number(id[3]);
+      }
+    })
+  </script>
 
-              </div>
 
-              <br>
-              <div class="is-size-5 publication-authors">
-                <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> East China Normal
-                  University </span>
-                <span class="author-block"><b style="color:#F2A900; font-weight:normal">&#x25B6 </b> The Chinese
-                  University of Hong Kong, Shenzhen </span>
-                <span class="author-block"><b style="color:#3e8a2ce3; font-weight:normal">&#x25B6 </b>Huashan Hospital
-                </span>
-                <span class="author-block"><b style="color:#b52390; font-weight:normal">&#x25B6 </b>Tongji University
-                </span>
-              </div>
 
-              <div class="is-size-5 publication-authors">
-                <!-- <span class="author-block"><sup>*</sup>Equal Contribution </span> -->
-                <!-- <span class="author-block"><sup>&#x2628;</sup>Equal Advisory Contribution, </span> -->
-                <!-- <span class="author-block"><sup>&#x2691;</sup>Project Lead </span> -->
-              </div>
 
-              <br>
-              <!--  <div class="is-size-5 publication-authors">
-              <span class="author-block"><b style="color:#e08ba0; font-weight:normal"> <b>In CVPR2023</b> </b></span>
-            </div> -->
 
-
-              <div class="column has-text-centered">
-                <div class="publication-links">
-                  <span class="link-block">
-                    <a href="https://link.springer.com/article/10.1631/FITEE.2200299" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                      </span>
-                      <span>Paper</span>
-                    </a>
-                  </span>
-
-                  <span class="link-block">
-                    <a href="https://github.com/Vision-CAIR/MiniGPT-4" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Code</span>
-                    </a>
-                  </span>
-
-                  <script>
-                    window.addEventListener('load', function () {
-                      const urls = [
-                        'https://bb0eec8976f38a480c.gradio.live',
-                        'https://94c50413658b59829f.gradio.live',
-                        'https://16440e488436f49d99.gradio.live',
-                        'https://02edd560d60615d755.gradio.live',
-                      ];
-                      const randomIndex = Math.floor(Math.random() * urls.length);
-                      const randomURL = urls[randomIndex];
-                      document.getElementById('randomLink').href = randomURL;
-                    });
-                  </script>
-
-                  <!--               <span class="link-block">
-                  <a id="randomLink" href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fa fa-play"></i>
-                    </span>
-                    <span>Demo</span>
-                  </a>
-                </span> -->
-
-                  <span class="link-block">
-                    <a href="https://youtu.be/__tftoxpBAw" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fab fa-youtube"></i>
-                      </span>
-                      <span>Video</span>
-                    </a>
-                  </span>
-
-                  <span class="link-block">
-                    <a href="https://huggingface.co/datasets/Vision-CAIR/cc_sbu_align" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fa fa-database"></i>
-                      </span>
-                      <span>Dataset</span>
-                    </a>
-                  </span>
-
-                  <span class="link-block">
-                    <a href="https://huggingface.co/Vision-CAIR/MiniGPT-4" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fa fa-laugh"></i>
-                      </span>
-                      <span>Model</span>
-                    </a>
-                  </span>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script>
-      window.addEventListener('load', function () {
-        const urls = [
-          'https://bb0eec8976f38a480c.gradio.live',
-          'https://94c50413658b59829f.gradio.live',
-          'https://16440e488436f49d99.gradio.live',
-          'https://02edd560d60615d755.gradio.live',
-        ];
-        const randomIndex = Math.floor(Math.random() * urls.length);
-        const randomURL = urls[randomIndex];
-        const iframe = document.getElementById('gradio');
-        iframe.setAttribute('src', randomURL);
-      });
-    </script>
-
-    <link rel="stylesheet" type="text/css" href="js/simple_style.css" />
-
-
-    <section class="section">
-      <div class="container is-max-desktop">
-        <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Abstract</h2>
-            <div class="content has-text-justified">
-              <p>
-                Interactive medical segmentation based on human-in-the-loop machine learning is a novel paradigm that
-                draws on human expert knowledge to assist medical image segmentation.
-                However, existing methods often fall into what we call \textit{interactive misunderstanding}, the
-                essence
-                of which is the dilemma in trading off \textit{short-} and \textit{long-term} interaction information.
-                To better utilize the interactive information at various timescales, we propose an interactive
-                segmentation framework, called interactive {\bf{ME}}dical segmentation with self-adaptive
-                {\bf{C}}onfidence {\bf{CA}}libration ({\bf{MECCA}}), which combines action-based confidence learning and
-                multi-agent reinforcement learning.
-                A novel confidence network is learned by predicting the alignment level of the action with the
-                short-term
-                interactive information. A confidence-based reward-shaping mechanism is then proposed to explicitly
-                incorporate confidence in the policy gradient calculation, thus directly correcting the model's
-                interactive misunderstanding.
-                MECCA also enables user-friendly interactions by reducing the interaction intensity and difficulty via
-                label generation and interaction guidance, respectively.
-                Numerical experiments on different segmentation tasks show that MECCA can significantly improve short-
-                and
-                long-term interactive information utilization efficiency with remarkably fewer labeled samples.
-                </b>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--/ Abstract. -->
-        <br>
-        <br>
-
-        <div class="container">
-          <!-- Paper video. -->
-          <h2 class="title has-text-centered">Video Presentation</h2>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-
-              <div class="publication-video">
-                <!-- Youtube embed code here -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/__tftoxpBAw"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!--/ Paper video. -->
-        <br>
-        <br>
-        <!-- Paper Model. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-six-fifths">
-            <h2 class="title is-3">Model</h2>
-            <div class="content has-text-justified">
-              <p>
-                <b>MiniGPT-4 consists of a vision encoder with a pretrained ViT and Q-Former, a single linear projection
-                  layer, and an advanced Vicuna large language model. MiniGPT-4 only requires training the linear layer
-                  to
-                  align the visual features with the Vicuna.</b>:
-              </p>
-              <ul>
-                <!-- <li>It has two types of queries (latent queries and text queries) and outputs (semantic outputs and pixel-level outputs).</li>
-              <li>It uses a single text encoder for all text corpus, ranging from class concepts, referring phrases to image captions.</li>
-              <li>It decouples image and text encoder to accomadate cross-image tasks (e.g., image-text retrieval) and within-image tasks (e.g., segmentation and captioning).</li> -->
-
-              </ul>
-            </div>
-            <img id="model" width="80%" src="images/overview.png">
-            <h3 class="subtitle has-text-centered">
-              <p style="font-family:Times New Roman"><b>The architecture of MiniGPT-4.</b></p>
-            </h3>
-            <br>
-            <br>
-
-          </div>
-        </div>
-        <br>
-        <br>
-        <!--/ Paper video. -->
-      </div>
-    </section>
-
-
-    <section class="section" id="BibTeX">
-      <div class="container is-max-desktop content">
-        <h2 class="title">BibTeX</h2>
-        <pre><code>@article{zhu2023minigpt,
-      title={MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models},
-      author={Zhu, Deyao and Chen, Jun and Shen, Xiaoqian and Li, Xiang and Elhoseiny, Mohamed},
-      journal={arXiv preprint arXiv:2304.10592},
-      year={2023}
-    }</code></pre>
-      </div>
-    </section>
-
-
-
-    <section class="section" id="Acknowledgement">
-      <div class="container is-max-desktop content">
-        <h2 class="title">Acknowledgement</h2>
-        <p>
-          This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed
-          under
-          a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <!-- Results. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-six-fifths">
-          <h2 class="title is-3">Results</h2>
-        </div>
-      </div>
-  </div>
-  <!--/ Results. -->
-  <div class="container is-max-desktop">
-    </section>
-
-    <section class="section">
-      <div id="main">
-
-        <div class="box">
-          <div class="pic"><img src="demos/fact_1.png" alt=""></div>
-        </div>
-        <div class="box">
-          <div class="pic"><img src="demos/fact_2.png" alt=""></div>
-        </div>
-        <div class="box">
-          <div class="pic"><img src="demos/fix_2.png" alt=""></div>
-        </div>
-        <div class="box">
-          <div class="pic"><img src="demos/fun_1.png" alt=""></div>
-        </div>
-        <div class="box">
-          <div class="pic"><img src="demos/fun_2.png" alt=""></div>
-        </div>
-      </div>
-
-    </section>
-  </div>
-
-  <br>
-  <br>
-
-  <div class="article">
-    <section class="before">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h2 class="title is-2 publication-title">Interactive medical image segmentation with self-adaptive
-              confidence calibration</h2>
-            <div class="is-size-5">
-              <span class="author-block">
-                <a href="https://scholar.google.com.hk/citations?user=sB4jZ54AAAAJ"
-                  style="color:#008AD7;font-weight:normal;">Chuyun
-                  Shen</a>,
-              </span>
-              <span class="author-block">
-                <a href="https://orcid.org/0000-0003-2985-1098" style="color:#F2A900;font-weight:normal;">Wenhao Li</a>,
-              </span>
-              <span class="author-block">
-                <a href="#" style="color:#008AD7;font-weight:normal;">Qisen Xu</a>,
-              </span>
-              <span class="author-block">
-                <a href="#" style="color:#3e8a2ce3;font-weight:normal;">Bin Hu</a>,
-              </span>
-              <span class="author-block">
-                <a href="#" style="color:#b52390;font-weight:normal;">Bo Jin</a>,
-              </span>
-              <span class="author-block">
-                <a href="#" style="color:#008AD7;font-weight:normal;">Haibin Cai</a>,
-              </span>
-              <span class="author-block">
-                <a href="#" style="color:#3e8a2ce3;font-weight:normal;">Fengping Zhu</a>,
-              </span>
-              <span class="author-block">
-                <a href="#" style="color:#3e8a2ce3;font-weight:normal;">Yuxin Li</a>,
-              </span>
-              <span class="author-block">
-                <a href="#" style="color:#008AD7;font-weight:normal;">Xiangfeng Wang</a>
-              </span>
-
-            </div>
-
-            <br>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> East China Normal
-                University </span>
-              <span class="author-block"><b style="color:#F2A900; font-weight:normal">&#x25B6 </b> The Chinese
-                University of Hong Kong, Shenzhen </span>
-              <span class="author-block"><b style="color:#3e8a2ce3; font-weight:normal">&#x25B6 </b>Huashan Hospital
-              </span>
-              <span class="author-block"><b style="color:#b52390; font-weight:normal">&#x25B6 </b>Tongji University
-              </span>
-            </div>
-
-            <div class="is-size-5 publication-authors">
-              <!-- <span class="author-block"><sup>*</sup>Equal Contribution </span> -->
-              <!-- <span class="author-block"><sup>&#x2628;</sup>Equal Advisory Contribution, </span> -->
-              <!-- <span class="author-block"><sup>&#x2691;</sup>Project Lead </span> -->
-            </div>
-
-            <br>
-            <!--  <div class="is-size-5 publication-authors">
-              <span class="author-block"><b style="color:#e08ba0; font-weight:normal"> <b>In CVPR2023</b> </b></span>
-            </div> -->
-
-
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <span class="link-block">
-                  <a href="https://link.springer.com/article/10.1631/FITEE.2200299" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span>
-
-                <span class="link-block">
-                  <a href="https://github.com/Vision-CAIR/MiniGPT-4" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <script>
-                  window.addEventListener('load', function () {
-                    const urls = [
-                      'https://bb0eec8976f38a480c.gradio.live',
-                      'https://94c50413658b59829f.gradio.live',
-                      'https://16440e488436f49d99.gradio.live',
-                      'https://02edd560d60615d755.gradio.live',
-                    ];
-                    const randomIndex = Math.floor(Math.random() * urls.length);
-                    const randomURL = urls[randomIndex];
-                    document.getElementById('randomLink').href = randomURL;
-                  });
-                </script>
-
-                <!--               <span class="link-block">
-                  <a id="randomLink" href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fa fa-play"></i>
-                    </span>
-                    <span>Demo</span>
-                  </a>
-                </span> -->
-
-                <span class="link-block">
-                  <a href="https://youtu.be/__tftoxpBAw" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                    </span>
-                    <span>Video</span>
-                  </a>
-                </span>
-
-                <span class="link-block">
-                  <a href="https://huggingface.co/datasets/Vision-CAIR/cc_sbu_align" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fa fa-database"></i>
-                    </span>
-                    <span>Dataset</span>
-                  </a>
-                </span>
-
-                <span class="link-block">
-                  <a href="https://huggingface.co/Vision-CAIR/MiniGPT-4" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fa fa-laugh"></i>
-                    </span>
-                    <span>Model</span>
-                  </a>
-                </span>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script>
-      window.addEventListener('load', function () {
-        const urls = [
-          'https://bb0eec8976f38a480c.gradio.live',
-          'https://94c50413658b59829f.gradio.live',
-          'https://16440e488436f49d99.gradio.live',
-          'https://02edd560d60615d755.gradio.live',
-        ];
-        const randomIndex = Math.floor(Math.random() * urls.length);
-        const randomURL = urls[randomIndex];
-        const iframe = document.getElementById('gradio');
-        iframe.setAttribute('src', randomURL);
-      });
-    </script>
-
-    <link rel="stylesheet" type="text/css" href="js/simple_style.css" />
-
-
-    <section class="section">
-      <div class="container is-max-desktop">
-        <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Abstract</h2>
-            <div class="content has-text-justified">
-              <p>
-                Interactive medical segmentation based on human-in-the-loop machine learning is a novel paradigm that
-                draws on human expert knowledge to assist medical image segmentation.
-                However, existing methods often fall into what we call \textit{interactive misunderstanding}, the
-                essence
-                of which is the dilemma in trading off \textit{short-} and \textit{long-term} interaction information.
-                To better utilize the interactive information at various timescales, we propose an interactive
-                segmentation framework, called interactive {\bf{ME}}dical segmentation with self-adaptive
-                {\bf{C}}onfidence {\bf{CA}}libration ({\bf{MECCA}}), which combines action-based confidence learning and
-                multi-agent reinforcement learning.
-                A novel confidence network is learned by predicting the alignment level of the action with the
-                short-term
-                interactive information. A confidence-based reward-shaping mechanism is then proposed to explicitly
-                incorporate confidence in the policy gradient calculation, thus directly correcting the model's
-                interactive misunderstanding.
-                MECCA also enables user-friendly interactions by reducing the interaction intensity and difficulty via
-                label generation and interaction guidance, respectively.
-                Numerical experiments on different segmentation tasks show that MECCA can significantly improve short-
-                and
-                long-term interactive information utilization efficiency with remarkably fewer labeled samples.
-                </b>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--/ Abstract. -->
-        <br>
-        <br>
-
-        <div class="container">
-          <!-- Paper video. -->
-          <h2 class="title has-text-centered">Video Presentation</h2>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-
-              <div class="publication-video">
-                <!-- Youtube embed code here -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/__tftoxpBAw"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!--/ Paper video. -->
-        <br>
-        <br>
-        <!-- Paper Model. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-six-fifths">
-            <h2 class="title is-3">Model</h2>
-            <div class="content has-text-justified">
-              <p>
-                <b>MiniGPT-4 consists of a vision encoder with a pretrained ViT and Q-Former, a single linear projection
-                  layer, and an advanced Vicuna large language model. MiniGPT-4 only requires training the linear layer
-                  to
-                  align the visual features with the Vicuna.</b>:
-              </p>
-              <ul>
-                <!-- <li>It has two types of queries (latent queries and text queries) and outputs (semantic outputs and pixel-level outputs).</li>
-              <li>It uses a single text encoder for all text corpus, ranging from class concepts, referring phrases to image captions.</li>
-              <li>It decouples image and text encoder to accomadate cross-image tasks (e.g., image-text retrieval) and within-image tasks (e.g., segmentation and captioning).</li> -->
-
-              </ul>
-            </div>
-            <img id="model" width="80%" src="images/overview.png">
-            <h3 class="subtitle has-text-centered">
-              <p style="font-family:Times New Roman"><b>The architecture of MiniGPT-4.</b></p>
-            </h3>
-            <br>
-            <br>
-
-          </div>
-        </div>
-        <br>
-        <br>
-        <!--/ Paper video. -->
-      </div>
-    </section>
-
-
-    <section class="section" id="BibTeX">
-      <div class="container is-max-desktop content">
-        <h2 class="title">BibTeX</h2>
-        <pre><code>@article{zhu2023minigpt,
-      title={MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models},
-      author={Zhu, Deyao and Chen, Jun and Shen, Xiaoqian and Li, Xiang and Elhoseiny, Mohamed},
-      journal={arXiv preprint arXiv:2304.10592},
-      year={2023}
-    }</code></pre>
-      </div>
-    </section>
-
-
-
-    <section class="section" id="Acknowledgement">
-      <div class="container is-max-desktop content">
-        <h2 class="title">Acknowledgement</h2>
-        <p>
-          This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed
-          under
-          a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <!-- Results. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-six-fifths">
-          <h2 class="title is-3">Results</h2>
-        </div>
-      </div>
-  </div>
-  <!--/ Results. -->
-  <div class="container is-max-desktop">
-    </section>
-
-    <section class="section">
-      <div id="main">
-
-        <div class="box">
-          <div class="pic"><img src="demos/fact_1.png" alt=""></div>
-        </div>
-        <div class="box">
-          <div class="pic"><img src="demos/fact_2.png" alt=""></div>
-        </div>
-        <div class="box">
-          <div class="pic"><img src="demos/fix_2.png" alt=""></div>
-        </div>
-        <div class="box">
-          <div class="pic"><img src="demos/fun_1.png" alt=""></div>
-        </div>
-        <div class="box">
-          <div class="pic"><img src="demos/fun_2.png" alt=""></div>
-        </div>
-      </div>
-
-    </section>
-  </div>
-
-  <br>
-  <br>
-
-  <div class="article">
-    <section class="before">
-      <div class="before-body">
-        <div class="container is-max-desktop">
-          <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <h2 class="title is-2 publication-title">Interactive medical image segmentation with self-adaptive
-                confidence calibration</h2>
-              <div class="is-size-5">
-                <span class="author-block">
-                  <a href="https://scholar.google.com.hk/citations?user=sB4jZ54AAAAJ"
-                    style="color:#008AD7;font-weight:normal;">Chuyun
-                    Shen</a>,
-                </span>
-                <span class="author-block">
-                  <a href="https://orcid.org/0000-0003-2985-1098" style="color:#F2A900;font-weight:normal;">Wenhao
-                    Li</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#008AD7;font-weight:normal;">Qisen Xu</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#3e8a2ce3;font-weight:normal;">Bin Hu</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#b52390;font-weight:normal;">Bo Jin</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#008AD7;font-weight:normal;">Haibin Cai</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#3e8a2ce3;font-weight:normal;">Fengping Zhu</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#3e8a2ce3;font-weight:normal;">Yuxin Li</a>,
-                </span>
-                <span class="author-block">
-                  <a href="#" style="color:#008AD7;font-weight:normal;">Xiangfeng Wang</a>
-                </span>
-
-              </div>
-
-              <br>
-              <div class="is-size-5 publication-authors">
-                <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> East China Normal
-                  University </span>
-                <span class="author-block"><b style="color:#F2A900; font-weight:normal">&#x25B6 </b> The Chinese
-                  University of Hong Kong, Shenzhen </span>
-                <span class="author-block"><b style="color:#3e8a2ce3; font-weight:normal">&#x25B6 </b>Huashan Hospital
-                </span>
-                <span class="author-block"><b style="color:#b52390; font-weight:normal">&#x25B6 </b>Tongji University
-                </span>
-              </div>
-
-              <div class="is-size-5 publication-authors">
-                <!-- <span class="author-block"><sup>*</sup>Equal Contribution </span> -->
-                <!-- <span class="author-block"><sup>&#x2628;</sup>Equal Advisory Contribution, </span> -->
-                <!-- <span class="author-block"><sup>&#x2691;</sup>Project Lead </span> -->
-              </div>
-
-              <br>
-              <!--  <div class="is-size-5 publication-authors">
-              <span class="author-block"><b style="color:#e08ba0; font-weight:normal"> <b>In CVPR2023</b> </b></span>
-            </div> -->
-
-
-              <div class="column has-text-centered">
-                <div class="publication-links">
-                  <span class="link-block">
-                    <a href="https://link.springer.com/article/10.1631/FITEE.2200299" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                      </span>
-                      <span>Paper</span>
-                    </a>
-                  </span>
-
-                  <span class="link-block">
-                    <a href="https://github.com/Vision-CAIR/MiniGPT-4" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Code</span>
-                    </a>
-                  </span>
-
-                  <script>
-                    window.addEventListener('load', function () {
-                      const urls = [
-                        'https://bb0eec8976f38a480c.gradio.live',
-                        'https://94c50413658b59829f.gradio.live',
-                        'https://16440e488436f49d99.gradio.live',
-                        'https://02edd560d60615d755.gradio.live',
-                      ];
-                      const randomIndex = Math.floor(Math.random() * urls.length);
-                      const randomURL = urls[randomIndex];
-                      document.getElementById('randomLink').href = randomURL;
-                    });
-                  </script>
-
-                  <!--               <span class="link-block">
-                  <a id="randomLink" href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fa fa-play"></i>
-                    </span>
-                    <span>Demo</span>
-                  </a>
-                </span> -->
-
-                  <span class="link-block">
-                    <a href="https://youtu.be/__tftoxpBAw" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fab fa-youtube"></i>
-                      </span>
-                      <span>Video</span>
-                    </a>
-                  </span>
-
-                  <span class="link-block">
-                    <a href="https://huggingface.co/datasets/Vision-CAIR/cc_sbu_align" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fa fa-database"></i>
-                      </span>
-                      <span>Dataset</span>
-                    </a>
-                  </span>
-
-                  <span class="link-block">
-                    <a href="https://huggingface.co/Vision-CAIR/MiniGPT-4" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fa fa-laugh"></i>
-                      </span>
-                      <span>Model</span>
-                    </a>
-                  </span>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <link rel="stylesheet" type="text/css" href="js/simple_style.css" />
-
-
-    <section class="section">
-      <div class="container is-max-desktop">
-        <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Abstract</h2>
-            <div class="content has-text-justified">
-              <p>
-                Interactive medical segmentation based on human-in-the-loop machine learning is a novel paradigm that
-                draws on human expert knowledge to assist medical image segmentation.
-                However, existing methods often fall into what we call \textit{interactive misunderstanding}, the
-                essence
-                of which is the dilemma in trading off \textit{short-} and \textit{long-term} interaction information.
-                To better utilize the interactive information at various timescales, we propose an interactive
-                segmentation framework, called interactive {\bf{ME}}dical segmentation with self-adaptive
-                {\bf{C}}onfidence {\bf{CA}}libration ({\bf{MECCA}}), which combines action-based confidence learning and
-                multi-agent reinforcement learning.
-                A novel confidence network is learned by predicting the alignment level of the action with the
-                short-term
-                interactive information. A confidence-based reward-shaping mechanism is then proposed to explicitly
-                incorporate confidence in the policy gradient calculation, thus directly correcting the model's
-                interactive misunderstanding.
-                MECCA also enables user-friendly interactions by reducing the interaction intensity and difficulty via
-                label generation and interaction guidance, respectively.
-                Numerical experiments on different segmentation tasks show that MECCA can significantly improve short-
-                and
-                long-term interactive information utilization efficiency with remarkably fewer labeled samples.
-                </b>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--/ Abstract. -->
-        <br>
-        <br>
-
-        <div class="container">
-          <!-- Paper video. -->
-          <h2 class="title has-text-centered">Video Presentation</h2>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-
-              <div class="publication-video">
-                <!-- Youtube embed code here -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/__tftoxpBAw"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!--/ Paper video. -->
-        <br>
-        <br>
-        <!-- Paper Model. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-six-fifths">
-            <h2 class="title is-3">Model</h2>
-            <div class="content has-text-justified">
-              <p>
-                <b>MiniGPT-4 consists of a vision encoder with a pretrained ViT and Q-Former, a single linear projection
-                  layer, and an advanced Vicuna large language model. MiniGPT-4 only requires training the linear layer
-                  to
-                  align the visual features with the Vicuna.</b>:
-              </p>
-              <ul>
-                <!-- <li>It has two types of queries (latent queries and text queries) and outputs (semantic outputs and pixel-level outputs).</li>
-              <li>It uses a single text encoder for all text corpus, ranging from class concepts, referring phrases to image captions.</li>
-              <li>It decouples image and text encoder to accomadate cross-image tasks (e.g., image-text retrieval) and within-image tasks (e.g., segmentation and captioning).</li> -->
-
-              </ul>
-            </div>
-            <img id="model" width="80%" src="images/overview.png">
-            <h3 class="subtitle has-text-centered">
-              <p style="font-family:Times New Roman"><b>The architecture of MiniGPT-4.</b></p>
-            </h3>
-            <br>
-            <br>
-
-          </div>
-        </div>
-        <br>
-        <br>
-        <!--/ Paper video. -->
-      </div>
-    </section>
-
-
-    <section class="section" id="BibTeX">
-      <div class="container is-max-desktop content">
-        <h2 class="title">BibTeX</h2>
-        <pre><code>@article{zhu2023minigpt,
-      title={MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models},
-      author={Zhu, Deyao and Chen, Jun and Shen, Xiaoqian and Li, Xiang and Elhoseiny, Mohamed},
-      journal={arXiv preprint arXiv:2304.10592},
-      year={2023}
-    }</code></pre>
-      </div>
-    </section>
-
-
-
-    <section class="section" id="Acknowledgement">
-      <div class="container is-max-desktop content">
-        <h2 class="title">Acknowledgement</h2>
-        <p>
-          This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed
-          under
-          a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <!-- Results. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-six-fifths">
-          <h2 class="title is-3">Results</h2>
-        </div>
-      </div>
-  </div>
-  <!--/ Results. -->
-  <div class="container is-max-desktop">
-    </section>
-
-    <section class="section">
-      <div id="main">
-
-        <div class="box">
-          <div class="pic"><img src="demos/fact_1.png" alt=""></div>
-        </div>
-        <div class="box">
-          <div class="pic"><img src="demos/fact_2.png" alt=""></div>
-        </div>
-        <div class="box">
-          <div class="pic"><img src="demos/fix_2.png" alt=""></div>
-        </div>
-        <div class="box">
-          <div class="pic"><img src="demos/fun_1.png" alt=""></div>
-        </div>
-        <div class="box">
-          <div class="pic"><img src="demos/fun_2.png" alt=""></div>
-        </div>
-      </div>
-
-    </section>
-  </div>
-
-  <script src="js/Underscore-min.js"></script>
-  <script src="js/index.js"></script>
-  <script type="text/javascript" src="js/simple_swiper.js"></script>
 </body>
 
 </html>

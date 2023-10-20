@@ -1,7 +1,9 @@
 body {
   font-family: 'Noto Sans', sans-serif;
 }
-
+.wrapper{
+  width: 1200px;
+}
 
 .footer .icon-link {
     font-size: 25px;
@@ -154,4 +156,33 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+.section {
+  padding: 1rem 0;
+}
+
+.columns.is-centered {
+  justify-content: left;
+}
+
+.has-text-centered {
+  text-align: left!important;
+}
+
+
+.container {
+    max-width: 1200px;
+}
+
+.column.is-four-fifths, .column.is-four-fifths-tablet {
+  flex: none;
+  width: 100%;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
